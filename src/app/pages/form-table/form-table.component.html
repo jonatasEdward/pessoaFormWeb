@@ -1,0 +1,23 @@
+<h2 [style]="styleH2"> Tabela Formulário</h2>
+
+<table>
+
+  <tr>
+    <th>ID</th>
+    <th>NOME</th>
+    <th>EMAIL</th>
+    <th>CPF</th>
+    <th>Ação</th>
+  </tr>
+
+  <tr *ngFor="let pessoa of pessoasForm">
+    <td>{{ pessoa.id}}</td>
+    <td>{{ pessoa.nome}}</td>
+    <td>{{ pessoa.email}}</td>
+    <td>{{ pessoa.cpf}}</td>
+    <td><button (click)="getById(pessoa.id)">Visualizar</button></td>
+  </tr>
+</table>
+
+<button (click)="newPessoa()">Nova Pessoa</button>
+<button (click)="alteraH2()">alteraH2</button>

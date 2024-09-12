@@ -1,0 +1,15 @@
+<h2>Formulário</h2>
+
+<form class="styleForm" (ngSubmit)="onSubmit()">
+  <label for="nome">Nome: </label>
+  <input id="nome" [(ngModel)]="pessoa.nome" name="nome">
+
+  <label for="email">E-mail:</label>
+  <input id="email" [(ngModel)]="pessoa.email" name="email" >
+
+  <label for="cpf">CPF:</label>
+  <input id="cpf" [(ngModel)]="pessoa.cpf" name="cpf" >
+
+  <button type="submit">Enviar</button>
+</form>
+
